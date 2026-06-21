@@ -1,8 +1,17 @@
-# MARCY — AE Toolkit
+<div align="center">
 
-After Effects CEP panel for motion-graphics workflow.
+<img src="https://i.pinimg.com/1200x/bb/f8/68/bbf868dc073fe05bffdca5a4f044f887.jpg" width="100%" alt="Banner" />
 
-**[Download v1.0.1](https://github.com/Marcycuteaf/ae-marcy-toolkit/releases/latest)** · After Effects 2019–2025+ · macOS / Windows
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:4a0000,50:dc143c,100:ff4757&height=110&section=header&text=MARCY%20Toolkit&fontSize=40&fontColor=ffffff" width="100%" />
+
+### After Effects productivity panel for motion-graphics workflows
+
+[![Download](https://img.shields.io/github/v/release/Marcycuteaf/ae-marcy-toolkit?style=for-the-badge&color=dc143c&labelColor=4a0000&label=Download)](https://github.com/Marcycuteaf/ae-marcy-toolkit/releases/latest)
+[![After Effects](https://img.shields.io/badge/AE-2019%E2%80%932025%2B-ff4757?style=for-the-badge&logo=adobe&labelColor=8b0000)](https://www.adobe.com/products/aftereffects.html)
+
+Text · Align · Anchor · Null · Auto-crop — macOS / Windows
+
+</div>
 
 ---
 
@@ -21,13 +30,13 @@ After Effects CEP panel for motion-graphics workflow.
 - **Align & Anchor** — align / distribute · 3×3 anchor · paragraph L/C/R
 - **Tools** — Pre-C · Null · Adj · Sep XY · Solid · Cam · Light · Crop · In `[` / Out `]`
 
-Options: Color · Qty · 分別預合成 · 單一/合併
+Options: Color · Qty · separate pre-compose · single / merge
 
 ---
 
 ## Docs
 
-- [使用說明書](使用說明書_Manual.md)
+- [Manual (繁體中文)](使用說明書_Manual.md)
 
 ---
 
@@ -43,8 +52,10 @@ Options: Color · Qty · 分別預合成 · 單一/合併
 
 <div align="center">
 
-**訪問人次**
+**Page Views**
 
-<img src="https://mayu.due.moe/get/@Marcycuteaf.ae-marcy-toolkit?theme=asoul" alt="訪問人次" />
+<img src="https://mayu.due.moe/get/@Marcycuteaf.ae-marcy-toolkit?theme=asoul" alt="Page views" />
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:4a0000,50:dc143c,100:ff4757&height=60&section=footer" width="100%" />
 
 </div>
