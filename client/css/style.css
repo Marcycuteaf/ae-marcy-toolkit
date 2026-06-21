@@ -1,4 +1,3 @@
-/* MARCY — 簡潔扁平介面 */
 :root {
   --bg: #232323;
   --card: #2b2b2b;
@@ -8,8 +7,7 @@
   --btn-active: #5a8bd6;
   --text: #d8d8d8;
   --muted: #888;
-  --accent: #5a8bd6;
-  --radius: 5px;
+  --radius: 4px;
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -17,8 +15,8 @@
 html, body {
   background: var(--bg);
   color: var(--text);
-  font-family: -apple-system, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
-  font-size: 12px;
+  font-family: -apple-system, "Segoe UI", Arial, sans-serif;
+  font-size: 11px;
   -webkit-user-select: none;
   user-select: none;
 }
@@ -27,108 +25,61 @@ html, body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  padding: 8px;
-  gap: 8px;
+  padding: 6px;
+  gap: 6px;
 }
 
-/* 標題列 */
 .topbar {
-  display: flex;
-  align-items: baseline;
-  gap: 8px;
-  padding: 2px 2px 6px;
+  padding: 4px 2px 6px;
   border-bottom: 1px solid var(--line);
 }
 .brand {
-  font-size: 15px;
-  font-weight: 700;
-  letter-spacing: 3px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 2px;
   color: #fff;
 }
-.ver { font-size: 10px; color: var(--muted); letter-spacing: 1px; }
 
-/* 卡片區塊 */
 .card {
   background: var(--card);
   border: 1px solid var(--line);
   border-radius: var(--radius);
-  padding: 9px 10px 11px;
+  padding: 8px;
 }
 .card h2 {
-  font-size: 10px;
+  font-size: 9px;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 1.5px;
+  letter-spacing: 1px;
   color: var(--muted);
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 }
 
-/* 按鈕格線 */
-.grid { display: grid; gap: 5px; margin-bottom: 5px; }
+.grid { display: grid; gap: 4px; margin-bottom: 4px; }
 .grid:last-child { margin-bottom: 0; }
 .g2 { grid-template-columns: repeat(2, 1fr); }
 .g3 { grid-template-columns: repeat(3, 1fr); }
 .g4 { grid-template-columns: repeat(4, 1fr); }
 
-/* 按鈕 */
 .btn {
   appearance: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   border: 1px solid var(--line);
   background: var(--btn);
   color: var(--text);
   border-radius: var(--radius);
-  padding: 7px 4px;
-  font-size: 12px;
+  padding: 6px 4px;
+  font-size: 11px;
   cursor: pointer;
-  transition: background .12s, border-color .12s, color .12s;
 }
 .btn:hover { background: var(--btn-hover); }
 .btn:active { background: var(--btn-active); border-color: var(--btn-active); color: #fff; }
+.btn.sm { padding: 5px 2px; font-size: 10px; }
+.btn.sq { padding: 0; height: 24px; font-size: 10px; }
 
-/* icon + 小標 (直排) */
-.btn.col { flex-direction: column; gap: 3px; padding: 7px 3px 5px; }
-.btn.ic { padding: 6px; }
-.btn.sq { padding: 0; width: 26px; height: 26px; }
+.split { display: flex; gap: 8px; }
+.col-area { display: flex; flex-direction: column; gap: 5px; flex: 1; }
+.lbl { font-size: 9px; color: var(--muted); }
 
-/* icon 樣式：以線條為主，顏色跟隨文字 */
-.ico {
-  width: 18px;
-  height: 18px;
-  display: block;
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 1.8;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  flex: none;
-}
-.ico.sm { width: 16px; height: 16px; }
-
-/* 小標文字 */
-.cap {
-  font-size: 9px;
-  line-height: 1;
-  letter-spacing: .3px;
-  color: var(--muted);
-}
-.btn:active .cap { color: #fff; }
-
-/* 對齊 + 錨點 分欄 */
-.split { display: flex; gap: 10px; }
-.col-area { display: flex; flex-direction: column; gap: 6px; }
-.col-area:first-child { flex: 1; }
-.lbl { font-size: 9px; color: var(--muted); text-transform: uppercase; letter-spacing: 1px; margin-top: 2px; }
-
-.anchor-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 26px);
-  gap: 3px;
-}
-
-/* 下拉選單 */
 .select {
   appearance: none;
   width: 100%;
@@ -136,36 +87,29 @@ html, body {
   color: var(--text);
   border: 1px solid var(--line);
   border-radius: var(--radius);
-  padding: 6px 8px;
-  font-size: 12px;
-  cursor: pointer;
+  padding: 5px 6px;
+  font-size: 11px;
 }
-.select:focus { outline: none; border-color: var(--accent); }
 
-/* Tools 選項列 */
 .opts {
   display: flex;
   align-items: center;
-  gap: 10px;
-  margin-bottom: 8px;
+  gap: 8px;
+  margin-bottom: 6px;
   flex-wrap: wrap;
 }
-.opt { display: flex; align-items: center; gap: 5px; }
-.opt > span { font-size: 11px; color: var(--muted); }
-.opt .select { width: auto; min-width: 64px; }
+.opt { display: flex; align-items: center; gap: 4px; }
+.opt > span { font-size: 10px; color: var(--muted); }
+.opt .select { width: auto; min-width: 56px; }
 .opt.check { cursor: pointer; }
-.opt.check input { accent-color: var(--accent); width: 14px; height: 14px; }
+.opt.check input { accent-color: var(--btn-active); width: 12px; height: 12px; }
 
-/* 狀態列 */
 .statusbar {
   margin-top: auto;
-  padding: 6px 8px;
-  font-size: 11px;
+  padding: 5px 6px;
+  font-size: 10px;
   color: var(--muted);
   border-top: 1px solid var(--line);
-  min-height: 26px;
-  display: flex;
-  align-items: center;
 }
 .statusbar .ok { color: #7ec27e; }
 .statusbar .err { color: #e08a8a; }

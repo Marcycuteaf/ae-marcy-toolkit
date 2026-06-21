@@ -7,127 +7,70 @@
     <link rel="stylesheet" href="./css/style.css" />
 </head>
 <body>
-    <!-- ===== SVG icon 圖示庫 ===== -->
-    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
-        <defs>
-            <symbol id="i-text" viewBox="0 0 24 24"><path d="M5 6 V5 h14 v1 M12 5 V19 M9 19 h6"/></symbol>
-            <symbol id="i-fill" viewBox="0 0 24 24"><path d="M12 3 C12 3 6 10 6 14 a6 6 0 0 0 12 0 C18 10 12 3 12 3 Z"/></symbol>
-            <symbol id="i-grad" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="1.5"/><path d="M7 17 L17 7 M11 18 L18 11 M7 12 L12 7"/></symbol>
-            <symbol id="i-box" viewBox="0 0 24 24"><rect x="4" y="6" width="16" height="12" rx="1.5"/></symbol>
-            <symbol id="i-clean" viewBox="0 0 24 24"><path d="M4 17 L13 8 l3 3 L7 20 H4 Z M13 8 l3 -3 a1.8 1.8 0 0 1 3 0 l0 0 a1.8 1.8 0 0 1 0 3 l-3 3"/></symbol>
-
-            <symbol id="i-al-left" viewBox="0 0 24 24"><path d="M5 4 V20"/><rect x="8" y="7" width="11" height="3.4" rx="1"/><rect x="8" y="13.6" width="7" height="3.4" rx="1"/></symbol>
-            <symbol id="i-al-hc" viewBox="0 0 24 24"><path d="M12 4 V20"/><rect x="5" y="7" width="14" height="3.4" rx="1"/><rect x="8" y="13.6" width="8" height="3.4" rx="1"/></symbol>
-            <symbol id="i-al-right" viewBox="0 0 24 24"><path d="M19 4 V20"/><rect x="5" y="7" width="11" height="3.4" rx="1"/><rect x="9" y="13.6" width="7" height="3.4" rx="1"/></symbol>
-            <symbol id="i-al-top" viewBox="0 0 24 24"><path d="M4 5 H20"/><rect x="7" y="8" width="3.4" height="11" rx="1"/><rect x="13.6" y="8" width="3.4" height="7" rx="1"/></symbol>
-            <symbol id="i-al-vc" viewBox="0 0 24 24"><path d="M4 12 H20"/><rect x="7" y="5" width="3.4" height="14" rx="1"/><rect x="13.6" y="8" width="3.4" height="8" rx="1"/></symbol>
-            <symbol id="i-al-bottom" viewBox="0 0 24 24"><path d="M4 19 H20"/><rect x="7" y="5" width="3.4" height="11" rx="1"/><rect x="13.6" y="9" width="3.4" height="7" rx="1"/></symbol>
-            <symbol id="i-dist-h" viewBox="0 0 24 24"><path d="M5 4 V20 M19 4 V20"/><rect x="10.5" y="8" width="3" height="8" rx="1"/></symbol>
-            <symbol id="i-dist-v" viewBox="0 0 24 24"><path d="M4 5 H20 M4 19 H20"/><rect x="8" y="10.5" width="8" height="3" rx="1"/></symbol>
-
-            <symbol id="i-pa-left" viewBox="0 0 24 24"><path d="M4 6 H20 M4 10 H14 M4 14 H20 M4 18 H13"/></symbol>
-            <symbol id="i-pa-center" viewBox="0 0 24 24"><path d="M4 6 H20 M7 10 H17 M4 14 H20 M7 18 H17"/></symbol>
-            <symbol id="i-pa-right" viewBox="0 0 24 24"><path d="M4 6 H20 M10 10 H20 M4 14 H20 M11 18 H20"/></symbol>
-
-            <!-- 錨點：方框 + 對應位置的點 -->
-            <symbol id="i-an-tl" viewBox="0 0 24 24"><rect x="5" y="5" width="14" height="14" rx="1.5"/><circle cx="7.5" cy="7.5" r="1.8" fill="currentColor" stroke="none"/></symbol>
-            <symbol id="i-an-tm" viewBox="0 0 24 24"><rect x="5" y="5" width="14" height="14" rx="1.5"/><circle cx="12" cy="7.5" r="1.8" fill="currentColor" stroke="none"/></symbol>
-            <symbol id="i-an-tr" viewBox="0 0 24 24"><rect x="5" y="5" width="14" height="14" rx="1.5"/><circle cx="16.5" cy="7.5" r="1.8" fill="currentColor" stroke="none"/></symbol>
-            <symbol id="i-an-ml" viewBox="0 0 24 24"><rect x="5" y="5" width="14" height="14" rx="1.5"/><circle cx="7.5" cy="12" r="1.8" fill="currentColor" stroke="none"/></symbol>
-            <symbol id="i-an-mm" viewBox="0 0 24 24"><rect x="5" y="5" width="14" height="14" rx="1.5"/><circle cx="12" cy="12" r="1.8" fill="currentColor" stroke="none"/></symbol>
-            <symbol id="i-an-mr" viewBox="0 0 24 24"><rect x="5" y="5" width="14" height="14" rx="1.5"/><circle cx="16.5" cy="12" r="1.8" fill="currentColor" stroke="none"/></symbol>
-            <symbol id="i-an-bl" viewBox="0 0 24 24"><rect x="5" y="5" width="14" height="14" rx="1.5"/><circle cx="7.5" cy="16.5" r="1.8" fill="currentColor" stroke="none"/></symbol>
-            <symbol id="i-an-bm" viewBox="0 0 24 24"><rect x="5" y="5" width="14" height="14" rx="1.5"/><circle cx="12" cy="16.5" r="1.8" fill="currentColor" stroke="none"/></symbol>
-            <symbol id="i-an-br" viewBox="0 0 24 24"><rect x="5" y="5" width="14" height="14" rx="1.5"/><circle cx="16.5" cy="16.5" r="1.8" fill="currentColor" stroke="none"/></symbol>
-
-            <symbol id="i-precomp" viewBox="0 0 24 24"><rect x="4" y="8" width="11" height="11" rx="1.5"/><path d="M9 8 V5 h11 v11 h-3"/></symbol>
-            <symbol id="i-null" viewBox="0 0 24 24"><rect x="7" y="7" width="10" height="10" rx="1"/><path d="M12 3 V7 M12 17 V21 M3 12 H7 M17 12 H21"/></symbol>
-            <symbol id="i-adj" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 4 a8 8 0 0 1 0 16 Z" fill="currentColor" stroke="none"/></symbol>
-            <symbol id="i-sepxy" viewBox="0 0 24 24"><path d="M3 12 H21 M6 9 L3 12 L6 15 M18 9 L21 12 L18 15 M12 3 V21 M9 6 L12 3 L15 6 M9 18 L12 21 L15 18"/></symbol>
-            <symbol id="i-solid" viewBox="0 0 24 24"><rect x="5" y="5" width="14" height="14" rx="1.5" fill="currentColor" stroke="none"/></symbol>
-            <symbol id="i-cam" viewBox="0 0 24 24"><path d="M3 8 h4 l2 -2 h6 l2 2 h4 v10 h-18 Z"/><circle cx="13" cy="13" r="3"/></symbol>
-            <symbol id="i-light" viewBox="0 0 24 24"><path d="M9 18 h6 M10 21 h4"/><path d="M12 3 a6 6 0 0 1 4 10.5 c-0.7 0.7 -1 1.5 -1 2.5 h-6 c0 -1 -0.3 -1.8 -1 -2.5 A6 6 0 0 1 12 3 Z"/></symbol>
-            <symbol id="i-crop" viewBox="0 0 24 24"><path d="M7 2 V17 a1 1 0 0 0 1 1 H22 M2 7 H16 a1 1 0 0 1 1 1 V22"/></symbol>
-            <symbol id="i-inpoint" viewBox="0 0 24 24"><path d="M6 4 V20"/><rect x="6" y="9" width="12" height="6" rx="1"/><path d="M6 4 V20" stroke-width="2.4"/></symbol>
-            <symbol id="i-outpoint" viewBox="0 0 24 24"><path d="M18 4 V20" stroke-width="2.4"/><rect x="6" y="9" width="12" height="6" rx="1"/></symbol>
-        </defs>
-    </svg>
-
     <div class="app">
         <header class="topbar">
             <span class="brand">MARCY</span>
-            <span class="ver">AE Toolkit</span>
         </header>
 
-        <!-- 文字 & 效果 -->
         <section class="card">
             <h2>Text &amp; FX</h2>
             <div class="grid g3">
-                <button class="btn col" data-fn="text" data-a="BebasNeue-Regular" data-b="EXAMPLE MARCY" data-c="100" title="建立英文文字">
-                    <svg class="ico"><use href="#i-text"/></svg><span class="cap">EN</span>
-                </button>
-                <button class="btn col" data-fn="text" data-a="VDL-LogoJrBlack" data-b="文字見本" data-c="100" title="建立日文文字">
-                    <svg class="ico"><use href="#i-text"/></svg><span class="cap">JP</span>
-                </button>
-                <button class="btn col" data-fn="text" data-a="Arial-ItalicMT" data-b="example marcy" data-c="80" title="建立斜體小標">
-                    <svg class="ico"><use href="#i-text"/></svg><span class="cap">SUB</span>
-                </button>
+                <button class="btn" data-fn="text" data-a="BebasNeue-Regular" data-b="EXAMPLE MARCY" data-c="100">EN</button>
+                <button class="btn" data-fn="text" data-a="VDL-LogoJrBlack" data-b="文字見本" data-c="100">JP</button>
+                <button class="btn" data-fn="text" data-a="Arial-ItalicMT" data-b="example marcy" data-c="80">SUB</button>
             </div>
             <div class="grid g4">
-                <button class="btn col" data-fn="fx" data-a="Fill" title="填色 Fill"><svg class="ico"><use href="#i-fill"/></svg><span class="cap">Fill</span></button>
-                <button class="btn col" data-fn="fx" data-a="Gradient" title="漸層 Gradient"><svg class="ico"><use href="#i-grad"/></svg><span class="cap">Grad</span></button>
-                <button class="btn col" data-fn="fx" data-a="Box" title="文字框 Box"><svg class="ico"><use href="#i-box"/></svg><span class="cap">Box</span></button>
-                <button class="btn col" data-fn="fx" data-a="Clean" title="清除效果 Clean"><svg class="ico"><use href="#i-clean"/></svg><span class="cap">Clean</span></button>
+                <button class="btn" data-fn="fx" data-a="Fill">Fill</button>
+                <button class="btn" data-fn="fx" data-a="Gradient">Grad</button>
+                <button class="btn" data-fn="fx" data-a="Box">Box</button>
+                <button class="btn" data-fn="fx" data-a="Clean">Clean</button>
             </div>
         </section>
 
-        <!-- 對齊 + 錨點 -->
         <section class="card">
             <h2>Align &amp; Anchor</h2>
             <div class="split">
                 <div class="col-area">
                     <select id="alignTo" class="select">
-                        <option value="sel">對齊選取範圍</option>
+                        <option value="sel">對齊選取</option>
                         <option value="comp">對齊合成</option>
                     </select>
                     <div class="grid g3">
-                        <button class="btn ic" data-fn="align" data-a="left" title="靠左"><svg class="ico"><use href="#i-al-left"/></svg></button>
-                        <button class="btn ic" data-fn="align" data-a="hCenter" title="水平置中"><svg class="ico"><use href="#i-al-hc"/></svg></button>
-                        <button class="btn ic" data-fn="align" data-a="right" title="靠右"><svg class="ico"><use href="#i-al-right"/></svg></button>
-                        <button class="btn ic" data-fn="align" data-a="top" title="靠上"><svg class="ico"><use href="#i-al-top"/></svg></button>
-                        <button class="btn ic" data-fn="align" data-a="vCenter" title="垂直置中"><svg class="ico"><use href="#i-al-vc"/></svg></button>
-                        <button class="btn ic" data-fn="align" data-a="bottom" title="靠下"><svg class="ico"><use href="#i-al-bottom"/></svg></button>
+                        <button class="btn sm" data-fn="align" data-a="left">左</button>
+                        <button class="btn sm" data-fn="align" data-a="hCenter">中</button>
+                        <button class="btn sm" data-fn="align" data-a="right">右</button>
+                        <button class="btn sm" data-fn="align" data-a="top">上</button>
+                        <button class="btn sm" data-fn="align" data-a="vCenter">中</button>
+                        <button class="btn sm" data-fn="align" data-a="bottom">下</button>
                     </div>
                     <div class="grid g2">
-                        <button class="btn ic" data-fn="dist" data-a="H" title="水平分佈"><svg class="ico"><use href="#i-dist-h"/></svg></button>
-                        <button class="btn ic" data-fn="dist" data-a="V" title="垂直分佈"><svg class="ico"><use href="#i-dist-v"/></svg></button>
+                        <button class="btn sm" data-fn="dist" data-a="H">H 分佈</button>
+                        <button class="btn sm" data-fn="dist" data-a="V">V 分佈</button>
                     </div>
                 </div>
-
-                <div class="col-area anchor-col">
+                <div class="col-area">
                     <span class="lbl">Anchor</span>
-                    <div class="anchor-grid">
-                        <button class="btn sq" data-fn="anchor" data-a="TL" title="左上"><svg class="ico sm"><use href="#i-an-tl"/></svg></button>
-                        <button class="btn sq" data-fn="anchor" data-a="TM" title="上"><svg class="ico sm"><use href="#i-an-tm"/></svg></button>
-                        <button class="btn sq" data-fn="anchor" data-a="TR" title="右上"><svg class="ico sm"><use href="#i-an-tr"/></svg></button>
-                        <button class="btn sq" data-fn="anchor" data-a="ML" title="左"><svg class="ico sm"><use href="#i-an-ml"/></svg></button>
-                        <button class="btn sq" data-fn="anchor" data-a="MM" title="中心"><svg class="ico sm"><use href="#i-an-mm"/></svg></button>
-                        <button class="btn sq" data-fn="anchor" data-a="MR" title="右"><svg class="ico sm"><use href="#i-an-mr"/></svg></button>
-                        <button class="btn sq" data-fn="anchor" data-a="BL" title="左下"><svg class="ico sm"><use href="#i-an-bl"/></svg></button>
-                        <button class="btn sq" data-fn="anchor" data-a="BM" title="下"><svg class="ico sm"><use href="#i-an-bm"/></svg></button>
-                        <button class="btn sq" data-fn="anchor" data-a="BR" title="右下"><svg class="ico sm"><use href="#i-an-br"/></svg></button>
-                    </div>
-                    <span class="lbl">Paragraph</span>
                     <div class="grid g3">
-                        <button class="btn sq" data-fn="para" data-a="left" title="靠左對齊"><svg class="ico sm"><use href="#i-pa-left"/></svg></button>
-                        <button class="btn sq" data-fn="para" data-a="center" title="置中對齊"><svg class="ico sm"><use href="#i-pa-center"/></svg></button>
-                        <button class="btn sq" data-fn="para" data-a="right" title="靠右對齊"><svg class="ico sm"><use href="#i-pa-right"/></svg></button>
+                        <button class="btn sq" data-fn="anchor" data-a="TL">TL</button>
+                        <button class="btn sq" data-fn="anchor" data-a="TM">T</button>
+                        <button class="btn sq" data-fn="anchor" data-a="TR">TR</button>
+                        <button class="btn sq" data-fn="anchor" data-a="ML">L</button>
+                        <button class="btn sq" data-fn="anchor" data-a="MM">C</button>
+                        <button class="btn sq" data-fn="anchor" data-a="MR">R</button>
+                        <button class="btn sq" data-fn="anchor" data-a="BL">BL</button>
+                        <button class="btn sq" data-fn="anchor" data-a="BM">B</button>
+                        <button class="btn sq" data-fn="anchor" data-a="BR">BR</button>
+                    </div>
+                    <span class="lbl">Para</span>
+                    <div class="grid g3">
+                        <button class="btn sq" data-fn="para" data-a="left">L</button>
+                        <button class="btn sq" data-fn="para" data-a="center">C</button>
+                        <button class="btn sq" data-fn="para" data-a="right">R</button>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 工具 -->
         <section class="card">
             <h2>Tools</h2>
             <div class="opts">
@@ -153,30 +96,30 @@
                         <option>7</option><option>8</option><option>9</option><option>10</option>
                     </select>
                 </label>
-                <label class="opt check" title="預合成：打勾＝逐一分別預合成；取消＝合併成一個">
+                <label class="opt check">
                     <input type="checkbox" id="sep" checked />
                     <span>分別預合成</span>
                 </label>
-                <label class="opt check" title="打勾：多個選取圖層合併成單一個 Null / Adj / Solid；取消：每個圖層各自一個">
+                <label class="opt check">
                     <input type="checkbox" id="singleMode" checked />
                     <span>單一/合併</span>
                 </label>
             </div>
             <div class="grid g4">
-                <button class="btn col" data-fn="precomp" title="預合成 Pre-compose"><svg class="ico"><use href="#i-precomp"/></svg><span class="cap">Pre-C</span></button>
-                <button class="btn col" data-fn="null" title="建立 Null 並綁定"><svg class="ico"><use href="#i-null"/></svg><span class="cap">Null</span></button>
-                <button class="btn col" data-fn="adj" title="調整圖層 Adjustment"><svg class="ico"><use href="#i-adj"/></svg><span class="cap">Adj</span></button>
-                <button class="btn col" data-fn="sepxy" title="分離 XY 位置"><svg class="ico"><use href="#i-sepxy"/></svg><span class="cap">Sep XY</span></button>
+                <button class="btn" data-fn="precomp">Pre-C</button>
+                <button class="btn" data-fn="null">Null</button>
+                <button class="btn" data-fn="adj">Adj</button>
+                <button class="btn" data-fn="sepxy">Sep XY</button>
             </div>
             <div class="grid g4">
-                <button class="btn col" data-fn="solid" title="純色圖層 Solid"><svg class="ico"><use href="#i-solid"/></svg><span class="cap">Solid</span></button>
-                <button class="btn col" data-fn="camera" title="攝影機 Camera"><svg class="ico"><use href="#i-cam"/></svg><span class="cap">Cam</span></button>
-                <button class="btn col" data-fn="light" title="燈光 Light"><svg class="ico"><use href="#i-light"/></svg><span class="cap">Light</span></button>
-                <button class="btn col" data-fn="crop" title="自動裁切 Auto Crop"><svg class="ico"><use href="#i-crop"/></svg><span class="cap">Crop</span></button>
+                <button class="btn" data-fn="solid">Solid</button>
+                <button class="btn" data-fn="camera">Cam</button>
+                <button class="btn" data-fn="light">Light</button>
+                <button class="btn" data-fn="crop">Crop</button>
             </div>
             <div class="grid g2">
-                <button class="btn col" data-fn="inpoint" title="進點對齊目前時間 [ (Set In Point)"><svg class="ico"><use href="#i-inpoint"/></svg><span class="cap">In [</span></button>
-                <button class="btn col" data-fn="outpoint" title="出點對齊目前時間 ] (Set Out Point)"><svg class="ico"><use href="#i-outpoint"/></svg><span class="cap">Out ]</span></button>
+                <button class="btn" data-fn="inpoint">In [</button>
+                <button class="btn" data-fn="outpoint">Out ]</button>
             </div>
         </section>
 
