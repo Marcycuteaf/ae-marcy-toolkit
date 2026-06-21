@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://i.pinimg.com/1200x/bb/f8/68/bbf868dc073fe05bffdca5a4f044f887.jpg" width="100%" alt="Banner" />
+<img src="https://raw.githubusercontent.com/Marcycuteaf/Marcycuteaf/main/assets/banner-snow.gif" width="100%" alt="Landscape banner with snow" />
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:4a0000,50:dc143c,100:ff4757&height=110&section=header&text=MARCY%20Toolkit&fontSize=40&fontColor=ffffff" width="100%" />
 
