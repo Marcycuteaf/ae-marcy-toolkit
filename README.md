@@ -45,6 +45,6 @@ Options: Color · Qty · 分別預合成 · 單一/合併
 
 **訪問人次**
 
-<img src="https://count.getloli.org/get/@Marcycuteaf.ae-marcy-toolkit?theme=moe" alt="訪問人次" />
+<img src="https://mayu.due.moe/get/@Marcycuteaf.ae-marcy-toolkit?theme=asoul" alt="訪問人次" />
 
 </div>
